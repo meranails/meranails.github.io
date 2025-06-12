@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mera.Nails</title>
+  <style>
+    /* (Оставил ваши CSS стили без изменений для экономии места) */
+     @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+      background-image: url('https://allwebs.ru/images/2025/06/12/b421c71b97dfe7c2e39b23ad0c0c259f.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    /* Заголовок */
+    .header {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 24px;
+      font-family: 'Pacifico', cursive;
+      color: #ff69b4; /* Неоновый розовый */
+      text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+      z-index: 10;
+    }
+
+    /* Центр содержимого */
+    .center-content {
+      display: flex;
+      flex-direction: row; /* Выстраиваем элементы в ряд */
+      align-items: center;
+      justify-content: center;
+      padding-top: 100px;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    /* Обертка для кнопки и прайс-листа */
+    .button-pricelist-wrapper {
+      display: flex;
+      flex-direction: column; /* Размещаем кнопку и прайс-лист друг под другом */
+      align-items: flex-start; /* Выравниваем по левому краю */
+      margin-right: 20px; /* Отступ между аватаром и кнопкой/прайс-листом */
+    }
+
+    /* Аватка */
+    .avatar {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 3px solid #ff69b4;
+      object-fit: cover;
+      box-shadow: 0 0 20px #ff69b4;
+      margin-bottom: 20px;
+    }
+
+    /* Кнопка "Записаться" */
+    .button {
+      background-color: #ff69b4;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 0 15px #ff69b4, inset 0 0 10px #fff;
+      transition: all 0.3s ease;
+      margin-bottom: 20px; /* Уменьшен отступ между кнопкой и прайс-листом */
+    }
+
+    .button:hover {
+      background-color: #ff85c1;
+      box-shadow: 0 0 25px #ff69b4, inset 0 0 15px #fff;
+    }
+
+    /* Прайс лист */
+    .pricelist {
+      font-size: 20px;
+      color: #ff69b4;
+      text-shadow: 0 0 10px #ff69b4;
+      text-align: left; /* Выравниваем текст по левому краю */
+    }
+
+    /* Галерея */
+    .gallery-title {
+      font-size: 24px;
+      font-family: 'Pacifico', cursive;
+      color: #ff69b4;
+      text-shadow: 0 0 10px #ff69b4;
+      margin-bottom: 20px;
+    }
+
+    /* Галерея */
+    .gallery-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 10px;
+      max-width: 90%;
+    }
+
+    /* Изображения галереи */
+    .gallery-image {
+      width: 200px;
+      height: 150px;
+      flex-shrink: 0;
+      object-fit: cover;
+      border: 3px solid #ff69b4;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ff69b4;
+    }
+
+    /* Стрелки */
+    .arrow {
+      font-size: 30px;
+      color: #ff69b4;
+      cursor: pointer;
+      user-select: none;
+      padding: 0 10px;
+      transition: all 0.3s ease;
+    }
+
+    .arrow:hover {
+      color: #ff85c1;
+      transform: scale(1.2);
+    }
+
+    /* Обновленные стили для размещения кнопки под аватаром */
+    .avatar-container {
+      display: flex;
+      flex-direction: column; /* Размещаем элементы вертикально */
+      align-items: center; /* Выравниваем элементы по центру */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Заголовок -->
+<div class="header">Mera.Nails</div>
+
+<!-- Центр содержимого -->
+<div class="center-content">
+  <!-- Контейнер для аватара и кнопок -->
+  <div class="avatar-container">
+    <img src="https://imgpost.ru/img/2025-06/12/kzncq59ynm8zvl3121kdrko27.jpg" alt="Аватар" class="avatar" />
+
+    <!-- Кнопка "Записаться" -->
+    <a href="https://t.me/swwqxxu" >
+      <button class="button">Записаться</button>
+    </a>
+
+    <!-- Кнопка "Перейти в Канал" -->
+    <a href="https://t.me/meranails" target="_blank">  <!-- Замените your_channel_name на имя вашего канала -->
+      <button class="button">Перейти в Канал</button>
+    </a>
+  </div>
+
+  <!-- Обертка для прайс-листа -->
+  <div class="button-pricelist-wrapper">
+    <!-- Прайс лист -->
+    <div class="pricelist">
+      <h2>PRICE LIST</h2>
+      <ul>
+        <li>Наращивание
+          <ul>
+            <li>наращивание + однотон 700₽</li>
+            <li>наращивание + однотон + дизайн (включая фигурки) 800₽</li>
+            <li>не однотон + 50₽</li>
+            <li>на свои ногти (можно уже нарощенные) 💋</li>
+            <li>однотон короткие 600₽</li>
+            <li>однотон длинные 700₽</li>
+            <li>однотон короткие + дизайн (включая фигурки) 700₽</li>
+            <li>однотон длинные + дизайн (включая фигурки) 750₽</li>
+          </ul>
+        </li>
+        <li>Дополнительно
+          <ul>
+            <li>не однотон + 50₽</li>
+            <li>чистый маникюр (обрезание кутикулы и тд, без покрытия) 500₽</li>
+            <li>снятие без дальнейшего покрытия - 100₽</li>
+            <li>френч - 100₽</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Фото галерея -->
+<div class="gallery-section" style="text-align:center;">
+  <div class="gallery-title">ФОТОГАЛЕРЕЯ</div>
+  <!-- Стрелка влево -->
+  <span class="arrow" id="prev" onclick="scrollGallery(-1)">←</span>
+  <!-- Галерея -->
+  <div class="gallery-container" id="gallery">
+    <!-- Пример изображений, замените на свои -->
+    <img src="https://allwebs.ru/images/2025/06/12/2148d0b8f05b19d8662cb9a6fcb67eac.jpg" class="gallery-image" />
+    <img src="https://allwebs.ru/images/2025/06/12/4472cfd0d70ffd979723d2ae7e355c5c.jpg" class="gallery-image" />
+    <img src="https://allwebs.ru/images/2025/06/12/1a617af919b05b67d351102e5b6aa660.md.jpg" class="gallery-image" />
+    <img src="https://allwebs.ru/images/2025/06/12/09cce456023d88634ff1a6469b69e7f4.jpg" class="gallery-image" />
+    <img src="https://allwebs.ru/images/2025/06/12/420deb458d65ea85135ff1e7bdf1ef4f.jpg" class="gallery-image" />
+  </div>
+  <!-- Стрелка вправо -->
+  <span class="arrow" id="next" onclick="scrollGallery(1)">→</span>
+</div>
+
+<script>
+  // Скрипт для прокрутки галереи
+  const gallery = document.getElementById('gallery');
+
+  function scrollGallery(direction) {
+    const scrollAmount = 220; // ширина одного изображения + gap
+    gallery.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
+</body>
+</html>
